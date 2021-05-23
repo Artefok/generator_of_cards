@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Генератор открыток</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-secondary navbar-expand-sm sticky-top">
+            <a href="#" class="navbar-brand">
+                New Year's card
+            </a>
+            <button class = "button btn-primary" class = "navbar-toggler" type = "button" data-toggle="collapse" data-target="#IDofMenu" aria-controls="IDofMenu" aria-expanded = "False" aria_label = "Toggle-navigation"> 
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <div id = "IDofMenu" class = "collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto text-white">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                        <img src="img/card.png" alt="" width="30px" class="d-inline-block align-top">
+                        Открыть поздравление
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                        <img src="img/card1.png" alt="" width="30px" class="d-inline-block align-top">
+                        Создать свое поздравление
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                        <img src="img/gallery.png" alt="" width="30px" class="d-inline-block align-top">    
+                        Галерея поздравлений
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class = "nav-link">
+                        <img src="img/gallery1.png" alt="" width="30px" class="d-inline-block align-top">
+                        Каталог ваших поздравлений
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class = "col-sm-6">
+            <div id = "Carcat" class = "carousel slide carousel-fade" data-rise="carousel" data-interval="5000" data-keyboard = "true">
+                <div class = "carousel-inner">
+                    <div class = "carousel-item active">
+                        <img src = "img/slaider-card.png">
+                        <div class = "carousel-caption">
+                            <h5> Создай для друга поздравление на новый год! </h5>
+                            <a href="create.html"><button class = "button btn-primary"> Создать </button></a>
+                        </div>
+                    </div>
+                    <div class = "carousel-item">
+                        <img src = "img/slaider-card1.png" height = "600px" width = "500px">
+                        <div class = "carousel-caption">
+                            <h5> Просмотри те поздравления, которые прислал тебе друг! </h5>
+                            <button class = "button btn-primary">Просмотреть галерею </button>
+                        </div>
+                    </div>
+                    <div class = "carousel-item">
+                        <img src = "img/slaider-card2.png" height = "600px" width = "500px">
+                        <div class = "carousel-caption">
+                            <h3> Наш сайт поддерживает все разрешения картинок! </h3>
+                    </div>
+                    
+                </div>
+
+
+                <a class="carousel-control-prev" href="#Carcat" role="button" data-slide="prev"> 
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#Carcat" role="button" data-slide="next"> 
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+                <ol class = "carousel-indicators">
+                    <li data-target = "#Carcat" data-slide-to = "0" class = "active"></li>
+                    <li data-target = "#Carcat" data-slide-to = "1"></li>
+                    <li data-target = "#Carcat" data-slide-to = "2"></li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+        <script type="text/javascript" src="scripts/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </body>
+</html>

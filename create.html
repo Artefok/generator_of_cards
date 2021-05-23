@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Генератор открыток</title>
+        <link rel="stylesheet" href="style/style1.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-secondary navbar-expand-sm sticky-top">
+            <a href="#" class="navbar-brand">
+                New Year's card
+            </a>
+            <button class = "button btn-primary" class = "navbar-toggler" type = "button" data-toggle="collapse" data-target="#IDofMenu" aria-controls="IDofMenu" aria-expanded = "False" aria_label = "Toggle-navigation"> 
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <div id = "IDofMenu" class = "collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto text-white">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                        <img src="img/card.png" alt="" width="30px" class="d-inline-block align-top">
+                        Открыть поздравление
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                        <img src="img/card1.png" alt="" width="30px" class="d-inline-block align-top">
+                        Создать свое поздравление
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                        <img src="img/gallery.png" alt="" width="30px" class="d-inline-block align-top">    
+                        Галерея поздравлений
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class = "nav-link">
+                        <img src="img/gallery1.png" alt="" width="30px" class="d-inline-block align-top">
+                        Каталог ваших поздравлений
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <div class = "create">
+            <h1>Первый шаг</h1><br>
+            <h3>Напишите сюда имя вашего друга и укажите его пол</h3><br><br>
+            <input type="text" name="name_for_present" id="name_pres" value=""><br><br>
+            <div>
+                <input type="radio" name="gender" id="male" value = "Мужской">
+                <label for="male">Мужской</label>
+                <input type="radio" name="gender" id="female" value = "Женский">
+                <label for="male">Женский</label>
+            </div>
+            <h1>Второй шаг</h1><br><br>
+            <h3>Напишите, что вы хотите пожелать своему другу через запятую c маленькой буквы.</h3>
+            <input type="text" name="associations" id="assocs" value=""><br><br>
+            <h1>Третий шаг</h1><br><br>
+            <h3>Выберите картинку, на которой вы хотите поставить текст.</h3>
+            <form enctype="multipart/form-data" method="post" action = "php/send.php">
+                <p><input type="file" name="userfile" accept = "image/*"></p>
+                <button class = "button btn-success" onclick = "create_card()">Создать!</button>
+            </form> 
+        </div>
+        <script type="text/javascript" src="scripts/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </body>
+</html>
